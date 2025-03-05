@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #ffffff; /* White Background */
+    color: #3d2b1f; /* Dark Brown Text */
 }
 
 header {
-    background-color: #0077b6;
+    background-color: #3d2b1f; /* Dark Brown */
     color: white;
     padding: 20px;
 }
@@ -15,7 +16,7 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #023e8a;
+    background-color: #5a3e2b; /* Slightly lighter brown */
 }
 
 nav ul li {
@@ -38,8 +39,22 @@ nav ul li a {
 }
 
 footer {
-    background-color: #0077b6;
+    background-color: #3d2b1f; /* Dark Brown */
     color: white;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: #5a3e2b; /* Medium Brown */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3d2b1f; /* Darker Brown */
 }
