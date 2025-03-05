@@ -1,60 +1,108 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #ffffff; /* White Background */
-    color: #3d2b1f; /* Dark Brown Text */
+    background-color: #fffdf8; /* Soft off-white background */
+    color: #3d2b1f; /* Dark brown text */
 }
 
+/* Header Section */
 header {
-    background-color: #3d2b1f; /* Dark Brown */
+    background-color: #3d2b1f; /* Dark brown */
     color: white;
     padding: 20px;
 }
 
+header img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #5a3e2b; /* Medium brown */
+    padding: 10px 0;
+}
+
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    background-color: #5a3e2b; /* Slightly lighter brown */
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
+nav ul li a:hover {
+    background-color: #3d2b1f; /* Dark brown */
+    border-radius: 5px;
+}
+
+/* Sections */
 .about, .services {
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #3d2b1f; /* Dark Brown */
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+.about h2, .services h2 {
+    color: #5a3e2b; /* Medium brown */
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-/* Button Styles */
-button {
-    background-color: #5a3e2b; /* Medium Brown */
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #3d2b1f; /* Dark brown */
     color: white;
-    padding: 10px 20px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background-color: #5a3e2b; /* Medium brown */
+    color: white;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #3d2b1f; /* Darker Brown */
+    background-color: #3d2b1f; /* Darker brown */
 }
