@@ -3,33 +3,36 @@ body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #fffdf8; /* Soft off-white background */
+    background-color: #fffdf8; /* Soft off-white */
     color: #3d2b1f; /* Dark brown text */
 }
 
 /* Header Section */
 header {
-    background-color: #3d2b1f; /* Dark brown */
-    color: white;
+    background-color: #e8d3b9; /* Light brown background */
+    color: #3d2b1f;
+    display: flex;
+    align-items: center;
     padding: 20px;
 }
 
 header img {
-    width: 150px;
-    display: block;
-    margin: 0 auto 10px;
+    width: 120px;
+    margin-left: 20px; /* Moves logo to the left */
 }
 
-h1 {
-    margin: 10px 0;
+header h1 {
+    flex-grow: 1;
+    text-align: center;
     font-size: 28px;
+    margin: 0;
 }
 
 /* Navigation Bar */
 nav {
     background-color: #5a3e2b; /* Medium brown */
     padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
@@ -52,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #3d2b1f; /* Dark brown */
+    background-color: #3d2b1f; /* Darker brown */
     border-radius: 5px;
 }
 
