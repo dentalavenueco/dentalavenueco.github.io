@@ -3,58 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dental Avenue</title>
+    <title>Dental Avenue | Your Smile, Our Priority</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <img src="logo1.png" alt="Dental Avenue Logo">
-        <h1>Welcome to Dental Avenue</h1>
-        <p>Your Smile, Our Priority</p>
+        <div class="header-content">
+            <img src="logo.jpeg" alt="Dental Avenue Logo" class="logo">
+            <h1>Dental Avenue</h1>
+            <p>Your Smile, Our Priority</p>
+        </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="about">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Your Trusted Dental Care Partner</h2>
+            <p>Providing expert dental care with advanced technology and a patient-first approach.</p>
+            <button onclick="window.location.href='#contact'">Book an Appointment</button>
+        </div>
+        <img src="clinic-interior.jpg" alt="Dental Clinic Interior">
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <h2>Why Choose Dental Avenue?</h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <img src="expert-dentist.jpg" alt="Expert Dentist">
+                <p><strong>Experienced Dentist</strong> – Led by <strong>Dr. Vaishnavi</strong>, a skilled professional with 6+ years of experience.</p>
+            </div>
+            <div class="why-item">
+                <img src="modern-tech.jpg" alt="Modern Dental Technology">
+                <p><strong>Advanced Technology</strong> – State-of-the-art equipment for painless and precise treatments.</p>
+            </div>
+            <div class="why-item">
+                <img src="happy-patient.jpg" alt="Happy Patient">
+                <p><strong>Patient Comfort First</strong> – A stress-free, relaxing, and welcoming experience for all ages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Dental Services</h2>
+        <div class="services-grid">
+            <div class="service-item">🦷 General Dentistry</div>
+            <div class="service-item">😃 Cosmetic Dentistry</div>
+            <div class="service-item">🦷 Braces & Aligners</div>
+            <div class="service-item">🦷 Dental Implants</div>
+            <div class="service-item">😷 Painless Root Canals</div>
+            <div class="service-item">🚨 Emergency Dental Care</div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
         <h2>About Us</h2>
-        <p>At <strong>Dental Avenue</strong>, we are committed to providing <strong>exceptional dental care</strong> with a focus on <strong>precision, aesthetics, and patient comfort</strong>.</p>
-
-        <p><strong>Dr. Vaishnavi</strong>, a highly skilled <strong>Dentist, Cosmetic/Aesthetic Dentist, and Dental Surgeon</strong>, brings <strong>6 years of experience</strong> in delivering <strong>comprehensive dental treatments</strong>. She specializes in <strong>general dentistry, cosmetic enhancements, and advanced dental procedures</strong>, ensuring every patient receives <strong>personalized and high-quality care</strong>.</p>
-
-        <p>Dr. Vaishnavi completed her <strong>Bachelor of Dental Surgery (BDS)</strong> from <strong>Vaidik Dental College and Research Centre</strong> in 2019 and has since been dedicated to enhancing smiles and promoting <strong>excellent oral health</strong>.</p>
-
-        <p>At Dental Avenue, we combine <strong>state-of-the-art technology</strong> with <strong>modern techniques</strong> to offer a wide range of services, including:</p>
-        <ul>
-            <li> <strong>Preventive & Restorative Dentistry</strong></li>
-            <li> <strong>Cosmetic Dentistry & Smile Makeovers</strong></li>
-            <li> <strong>Teeth Whitening & Aligners</strong></li>
-            <li> <strong>Dental Implants & Root Canal Treatments</strong></li>
-        </ul>
-
-        <p>With a <strong>patient-first approach</strong>, our goal is to ensure <strong>healthy, confident smiles</strong> in a <strong>comfortable and welcoming environment</strong>.</p>
-
+        <img src="dr-vaishnavi.jpg" alt="Dr. Vaishnavi">
+        <p><strong>Dr. Vaishnavi</strong> is a highly experienced <strong>Dentist, Cosmetic/Aesthetic Dentist, and Dental Surgeon</strong> with a passion for healthy and beautiful smiles.</p>
+        <p>Graduated from <strong>Vaidik Dental College and Research Centre</strong> in 2019, she specializes in <strong>restorative and cosmetic dentistry</strong>, offering advanced dental solutions tailored to every patient.</p>
+        <p>At Dental Avenue, we blend **expert care** with **modern technology** to ensure the best dental experience.</p>
     </section>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Root Canal Treatment (RCT)</li>
-            <li>Teeth Cleaning</li>
-            <li>Whitening</li>
-            <li>Dental Implants</li>
-            <li>Braces & Aligners</li>
-        </ul>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Book Your Appointment</h2>
+        <p>We look forward to welcoming you! Contact us today to schedule a consultation.</p>
+        <p>📞 <strong>Call:</strong> <a href="tel:9880797497">9880797497</a></p>
+        <p>📍 <strong>Location:</strong> Dental Avenue, Kundalahalli, Bangalore</p>
+        <button onclick="window.location.href='https://wa.me/9880797497'">Book Now</button>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Dental Avenue. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
