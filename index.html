@@ -74,19 +74,20 @@
 
     <!-- JavaScript for Image Carousel -->
     <script>
-        let index = 0;
-        function moveSlide(step) {
-            const images = document.querySelectorAll('.gallery-img');
-            index += step;
-            if (index >= images.length) index = 0;
-            if (index < 0) index = images.length - 1;
-            images.forEach(img => img.style.display = 'none');
-            images[index].style.display = 'block';
-        }
-        document.addEventListener("DOMContentLoaded", () => {
-            moveSlide(0);
-        });
-    </script>
+    let index = 0;
+    
+    function moveSlide(step) {
+        const carousel = document.querySelector('.carousel');
+        const images = document.querySelectorAll('.gallery-img');
+        const imageWidth = 210; // Image width + margin
+
+        index += step;
+        if (index >= images.length) index = 0;
+        if (index < 0) index = images.length - 1;
+
+        carousel.style.transform = `translateX(${-index * imageWidth}px)`;
+    }
+   </script>
 
 </body>
 </html>
