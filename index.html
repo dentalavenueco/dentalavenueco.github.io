@@ -11,12 +11,12 @@
     <!-- Top Header -->
     <header class="top-header">
         <img src="logo.png" alt="Dental Avenue Logo" class="logo">
-        <div class="clinic-name">
-            <div class="clinic-title">Dental Avenue</div>
-            <div class="clinic-subtitle">Multi-Speciality Dental Clinic</div>
+        <div class="clinic-name"> 
+            Dental Avenue <br>
+            <small>Multi-Speciality Dental Clinic</small>
         </div>
         <div class="contact-info">
-            <div class="phone">📞 9880797497</div>
+            <span class="phone">📞 9880797497</span> <br>
             <button class="book-btn" onclick="window.location.href='#book-online'">Book Appointment</button>
         </div>
     </header>
@@ -36,27 +36,29 @@
 
     <!-- Gallery Section with Scrolling Images -->
     <section id="gallery" class="gallery">
-    <h2>Our Clinic</h2>
-    <div class="gallery-container">
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <div class="carousel">
-            <img src="c5.jpeg" class="gallery-img" alt="Clinic Image 1">
-            <img src="c2.jpeg" class="gallery-img" alt="Clinic Image 2">
-            <img src="c1.jpeg" class="gallery-img" alt="Clinic Image 3">
-            <img src="c3.jpeg" class="gallery-img" alt="Clinic Image 4">
-            <img src="c4.jpeg" class="gallery-img" alt="Clinic Image 5">
+        <h2>Our Clinic</h2>
+        <div class="gallery-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <img src="c1.jpeg" class="gallery-img" alt="Clinic Image 1">
+                    <img src="c2.jpeg" class="gallery-img" alt="Clinic Image 2">
+                    <img src="c3.jpeg" class="gallery-img" alt="Clinic Image 3">
+                    <img src="c4.jpeg" class="gallery-img" alt="Clinic Image 4">
+                    <img src="c5.jpeg" class="gallery-img" alt="Clinic Image 5">
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
     </section>
 
     <!-- About Us Section -->
     <section id="about" class="about">
         <h2>About Dr. Vaishnavi</h2>
+        <img src="Vaishnavi_dr.jpeg" alt="Dr. Vaishnavi" class="about-img">
         <div class="about-content">
-            <img src="Vaishnavi_dr.jpeg" alt="Dr. Vaishnavi" class="about-img">
-            <p><strong>Dr. Vaishnavi</strong> is a highly experienced **Dentist, Cosmetic/Aesthetic Dentist, and Dental Surgeon** dedicated to creating beautiful and healthy smiles.  
-            She graduated from **Vaidik Dental College and Research Centre** and has over 6 years of experience in **restorative and cosmetic dentistry**.</p>
+            <p><strong>Dr. Vaishnavi</strong> is a highly experienced **Dentist, Cosmetic/Aesthetic Dentist, and Dental Surgeon** dedicated to creating beautiful and healthy smiles.</p>
+            <p>She graduated from **Vaidik Dental College and Research Centre** and has over 6 years of experience in **restorative and cosmetic dentistry**.</p>
         </div>
     </section>
 
@@ -74,20 +76,20 @@
 
     <!-- JavaScript for Image Carousel -->
     <script>
-    let index = 0;
-    
-    function moveSlide(step) {
-        const carousel = document.querySelector('.carousel');
-        const images = document.querySelectorAll('.gallery-img');
-        const imageWidth = 210; // Image width + margin
+        let index = 0;
+        
+        function moveSlide(step) {
+            const carousel = document.querySelector('.carousel');
+            const images = document.querySelectorAll('.gallery-img');
+            const imageWidth = 210; // Image width + margin
 
-        index += step;
-        if (index >= images.length) index = 0;
-        if (index < 0) index = images.length - 1;
+            index += step;
+            if (index >= images.length) index = 0;
+            if (index < 0) index = images.length - 1;
 
-        carousel.style.transform = `translateX(${-index * imageWidth}px)`;
-    }
-   </script>
+            carousel.style.transform = `translateX(${-index * imageWidth}px)`;
+        }
+    </script>
 
 </body>
 </html>
