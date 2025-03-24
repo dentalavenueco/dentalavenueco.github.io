@@ -1,72 +1,87 @@
-/* Top Header */
-.top-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(45deg, #8B4513, #D2B48C); /* Brown gradient */
-    padding: 15px 20px;
-    color: white;
+/* Navigation Tabs */
+nav {
+    background: white;
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Logo */
-.logo {
-    width: 60px; /* Adjust for visibility */
-    height: auto;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Clinic Name */
-.clinic-name {
-    flex-grow: 1;
-    font-size: 24px;
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
     font-weight: bold;
-    text-align: center;
-}
-
-/* Contact Info */
-.contact-info {
-    text-align: right;
-}
-
-.book-btn {
-    background-color: white;
-    color: #8B4513;
-    border: none;
-    padding: 8px 15px;
-    font-size: 14px;
-    cursor: pointer;
+    padding: 10px 15px;
     border-radius: 5px;
-    margin-left: 10px;
 }
 
-.book-btn:hover {
-    background-color: #f5f5f5;
+nav ul li a:hover {
+    background: #d2b48c;
+    color: white;
 }
 
-/* About Section */
-.about {
+/* Gallery Section */
+.gallery {
     text-align: center;
     padding: 40px 0;
-    background-color: #f5f5f5;
+    background: #f5f5f5;
 }
 
-.about h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
 }
 
-/* Dr. Vaishnavi's Image */
-.about-img {
-    width: 150px; /* Smaller size */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-img {
+    width: 180px; /* Smaller images */
     height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    margin: 0 5px;
+    border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.about-content {
-    max-width: 600px;
-    margin: auto;
-    text-align: justify;
-    line-height: 1.5;
+/* Carousel Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
