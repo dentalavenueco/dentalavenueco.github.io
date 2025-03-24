@@ -502,7 +502,17 @@ body {
 
 .cta { background-color: var(--oxford-blue-1); }
 
-.cta-banner { margin-block-end: 10px; }
+.cta-banner {
+  max-width: 250px; /* Adjust this value to control the image size */
+  margin-inline: auto; /* Center align */
+}
+
+.cta-banner img {
+  width: 100%; /* Ensures the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: var(--radius-4);
+}
+
 
 .cta .section-subtitle { text-transform: capitalize; }
 
