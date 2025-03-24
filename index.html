@@ -21,7 +21,7 @@
         </div>
     </header>
 
-    <!-- Navigation Tabs -->
+    <!-- Navigation Tabs (Side by Side) -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -34,19 +34,17 @@
         </ul>
     </nav>
 
-    <!-- Gallery Section with Scrolling Images -->
+    <!-- Gallery Section with Working Carousel -->
     <section id="gallery" class="gallery">
         <h2>Our Clinic</h2>
         <div class="gallery-container">
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="carousel-wrapper">
-                <div class="carousel">
-                    <img src="c1.jpeg" class="gallery-img" alt="Clinic Image 1">
-                    <img src="c2.jpeg" class="gallery-img" alt="Clinic Image 2">
-                    <img src="c3.jpeg" class="gallery-img" alt="Clinic Image 3">
-                    <img src="c4.jpeg" class="gallery-img" alt="Clinic Image 4">
-                    <img src="c5.jpeg" class="gallery-img" alt="Clinic Image 5">
-                </div>
+            <div class="carousel">
+                <img src="c1.jpeg" class="gallery-img" alt="Clinic Image 1">
+                <img src="c2.jpeg" class="gallery-img" alt="Clinic Image 2">
+                <img src="c3.jpeg" class="gallery-img" alt="Clinic Image 3">
+                <img src="c4.jpeg" class="gallery-img" alt="Clinic Image 4">
+                <img src="c5.jpeg" class="gallery-img" alt="Clinic Image 5">
             </div>
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
@@ -74,14 +72,14 @@
         <p>&copy; 2025 Dental Avenue. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Image Carousel -->
+    <!-- JavaScript for Working Image Carousel -->
     <script>
         let index = 0;
-        
+
         function moveSlide(step) {
             const carousel = document.querySelector('.carousel');
             const images = document.querySelectorAll('.gallery-img');
-            const imageWidth = 210; // Image width + margin
+            const imageWidth = 190; // Adjust based on smaller image size
 
             index += step;
             if (index >= images.length) index = 0;
