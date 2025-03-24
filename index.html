@@ -3,67 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dental Avenue | Your Smile, Our Priority</title>
+    <title>Dental Avenue | Multi Speciality Dental Clinic</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <h1>Dental Avenue</h1>
-            <p>Your Smile, Our Priority</p>
+    <!-- Top Header -->
+    <header class="top-header">
+        <img src="logo.png" alt="Dental Avenue Logo" class="logo">
+        <div class="clinic-name"> Dental Avenue</div>
+        <div class="contact-info">
+            <span class="phone"> 📞 9880797497</span>
+            <button class="book-btn" onclick="window.location.href='#book-online'">Book Appointment</button>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Creating Beautiful Smiles with Expert Care</h2>
-        <p>Led by <strong>Dr. Vaishnavi</strong> with 6+ years of expertise.</p>
-        <button onclick="window.location.href='#contact'">Book an Appointment</button>
-    </section>
+    <!-- Navigation Tabs -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#book-online">Book Online</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Dental Services</h2>
-        <div class="services-grid">
-            <div class="service-item">🦷 General Dentistry</div>
-            <div class="service-item">😃 Cosmetic Dentistry</div>
-            <div class="service-item">🦷 Braces & Aligners</div>
-            <div class="service-item">🦷 Dental Implants</div>
-            <div class="service-item">😷 Painless Root Canals</div>
-            <div class="service-item">🚨 Emergency Dental Care</div>
+    <!-- Gallery Section with Scrolling Images -->
+    <section id="gallery" class="gallery">
+        <h2>Our Clinic</h2>
+        <div class="gallery-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <img src="c5.jpg" class="gallery-img" alt="Clinic Image 1">
+                <img src="c2.jpg" class="gallery-img" alt="Clinic Image 2">
+                <img src="c1.jpg" class="gallery-img" alt="Clinic Image 3">
+                <img src="c3.jpg" class="gallery-img" alt="Clinic Image 4">
+                <img src="c4.jpg" class="gallery-img" alt="Clinic Image 5">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </section>
 
     <!-- About Us Section -->
     <section id="about" class="about">
         <h2>About Dr. Vaishnavi</h2>
-        <p><strong>Dr. Vaishnavi</strong> is an experienced Dentist, Cosmetic/Aesthetic Dentist, and Dental Surgeon with a passion for healthy and beautiful smiles.</p>
-        <p>Graduated from <strong>Vaidik Dental College and Research Centre</strong>, she specializes in restorative and cosmetic dentistry, ensuring personalized care for every patient.</p>
+        <div class="about-content">
+            <img src="vaishnavi_dr.jpg" alt="Dr. Vaishnavi" class="about-img">
+            <p><strong>Dr. Vaishnavi</strong> is a highly experienced **Dentist, Cosmetic/Aesthetic Dentist, and Dental Surgeon** dedicated to creating beautiful and healthy smiles.  
+            She graduated from **Vaidik Dental College and Research Centre** and has over 6 years of experience in **restorative and cosmetic dentistry**.</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Book Your Appointment</h2>
-        <p>We are open from <strong>9 AM to 9:30 PM (Monday to Saturday)</strong>.</p>
+        <h2>Contact Us</h2>
         <p>📞 <strong>Call:</strong> <a href="tel:9880797497">9880797497</a></p>
         <p>📍 <strong>Location:</strong> No 134, First Floor, 5th Cross, ITPL Main Road, Opposite to Mayura Sagar, Kundalahalli Colony, Bangalore</p>
-        <button onclick="window.location.href='https://wa.me/9880797497'">Book Now</button>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Dental Avenue. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Image Carousel -->
+    <script>
+        let index = 0;
+        function moveSlide(step) {
+            const images = document.querySelectorAll('.gallery-img');
+            index += step;
+            if (index >= images.length) index = 0;
+            if (index < 0) index = images.length - 1;
+            images.forEach(img => img.style.display = 'none');
+            images[index].style.display = 'block';
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            moveSlide(0);
+        });
+    </script>
 
 </body>
 </html>
