@@ -502,7 +502,7 @@ body {
 
 .cta { background-color: var(--oxford-blue-1); }
 
-.cta-banner { margin-block-end: 50px; }
+.cta-banner { margin-block-end: 30px; }
 
 .cta .section-subtitle { text-transform: capitalize; }
 
