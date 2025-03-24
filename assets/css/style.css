@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -20,23 +9,24 @@
    * colors
    */
 
-  --light-steel-blue: hsl(218, 33%, 77%);
-  --royal-blue-light: hsl(225, 68%, 53%);
-  --flickr-blue_30: hsla(225, 68%, 53%, 0.3);
-  --carolina-blue: hsl(201, 92%, 47%);
-  --oxford-blue-1: hsl(218, 70%, 18%);
-  --oxford-blue-2: hsl(217, 100%, 12%);
-  --oxford-blue-3: hsl(218, 71%, 11%);
-  --gainsboro_50: hsla(0, 0%, 85%, 0.5);
-  --lavender-web: hsl(225, 67%, 91%);
-  --sonic-silver: hsl(0, 0%, 47%);
-  --light-gray: hsl(0, 0%, 84%);
-  --cultured: hsl(0, 0%, 97%);
-  --black_10: hsla(0, 0%, 0%, 0.1);
-  --black_8: hsla(0, 0%, 0%, 0.08);
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --jet: hsl(0, 0%, 20%);
+  --light-steel-blue: hsl(30, 25%, 77%); /* Muted beige */
+  --royal-blue-light: hsl(30, 68%, 40%); /* Warm brown */
+  --flickr-blue_30: hsla(30, 68%, 40%, 0.3); /* Transparent brown */
+  --carolina-blue: hsl(27, 92%, 37%); /* Deep caramel */
+  --oxford-blue-1: hsl(28, 70%, 18%); /* Dark coffee brown */
+  --oxford-blue-2: hsl(27, 100%, 12%); /* Rich espresso */
+  --oxford-blue-3: hsl(28, 71%, 11%); /* Dark chocolate */
+  --gainsboro_50: hsla(30, 15%, 85%, 0.5); /* Soft tan */
+  --lavender-web: hsl(30, 40%, 91%); /* Creamy beige */
+  --sonic-silver: hsl(30, 10%, 47%); /* Warm grayish brown */
+  --light-gray: hsl(30, 15%, 84%); /* Light mocha */
+  --cultured: hsl(30, 10%, 97%); /* Ivory */
+  --black_10: hsla(30, 10%, 0%, 0.1); /* Soft shadow brown */
+  --black_8: hsla(30, 10%, 0%, 0.08); /* Faint brownish tint */
+  --white: hsl(0, 0%, 100%); /* Pure white */
+  --black: hsl(0, 0%, 0%); /* Pure black */
+  --jet: hsl(30, 10%, 20%); /* Dark taupe */
+
 
   /**
    * gradient color
