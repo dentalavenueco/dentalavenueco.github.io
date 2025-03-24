@@ -21,9 +21,9 @@
         </div>
     </header>
 
-    <!-- Navigation Tabs -->
+    <!-- Navigation Tabs (Side by Side) -->
     <nav>
-        <ul>
+        <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -34,7 +34,7 @@
         </ul>
     </nav>
 
-    <!-- Gallery Section with Scrolling Images -->
+    <!-- Gallery Section with Small Scrolling Images -->
     <section id="gallery" class="gallery">
         <h2>Our Clinic</h2>
         <div class="gallery-container">
@@ -81,7 +81,7 @@
         function moveSlide(step) {
             const carousel = document.querySelector('.carousel');
             const images = document.querySelectorAll('.gallery-img');
-            const imageWidth = 210; // Image width + margin
+            const imageWidth = 150; // Smaller Image Width
 
             index += step;
             if (index >= images.length) index = 0;
