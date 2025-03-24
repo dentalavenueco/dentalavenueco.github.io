@@ -1,136 +1,92 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FAF3E0;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
 }
 
-/* Header */
-header {
-    background: #8B5E3B;
-    text-align: center;
-    padding: 20px;
+/* Top Header */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #8B5E3C, #A67C52); /* Brown gradient */
     color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shiny effect */
 }
 
+/* Logo */
 .logo {
-    width: 120px;
+    height: 60px;
 }
 
-/* Navigation */
+/* Clinic Name */
+.clinic-name {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Right Side: Phone & Button */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Phone Number */
+.phone {
+    font-size: 18px;
+}
+
+/* Book Appointment Button */
+.book-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #ffdb4d;
+}
+
+/* Navigation Tabs */
+nav {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
     list-style: none;
-    text-align: center;
-    padding: 10px;
-    background: #C19A6B;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    font-size: 18px;
+    color: #444;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    background: #F5E0C3;
-}
-
-.hero img {
-    width: 30%;
-    border-radius: 10px;
-}
-
-.hero button {
-    background: #8B5E3B;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-/* Why Choose Us Section */
-.why-choose {
-    text-align: center;
-    padding: 50px;
-}
-
-.why-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.why-item {
-    width: 30%;
-    background: #FDF1E1;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.why-item img {
-    width: 80px;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-/* Services */
-.services-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.service-item {
-    background: #8B5E3B;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-/* About Us Section */
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    background: #FDF1E1;
-}
-
-.about img {
-    width: 200px;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.about div {
-    max-width: 600px;
-}
-
-/* Contact Section */
-.contact {
-    text-align: center;
-    padding: 50px;
-}
-
-.contact button {
-    background: #C19A6B;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
+nav ul li a:hover {
+    color: #8B5E3C;
 }
