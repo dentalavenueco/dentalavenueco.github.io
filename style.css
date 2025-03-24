@@ -1,50 +1,92 @@
-/* Navigation Tabs */
-nav {
-    background: white;
-    padding: 10px 0;
+/* Top Header */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #8B4513, #D2B48C); /* Brown Gradient */
+    padding: 15px 20px;
+    color: white;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Logo */
+.logo {
+    width: 60px; /* Adjusted for Visibility */
+    height: auto;
 }
 
-nav ul li {
-    display: inline-block;
+/* Clinic Name */
+.clinic-name {
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: right;
+}
+
+.book-btn {
+    background-color: white;
+    color: #8B4513;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.book-btn:hover {
+    background-color: #f5f5f5;
+}
+
+/* Navigation Tabs (Side by Side) */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    background-color: #e0e0e0; /* Light Grey */
+}
+
+.nav-list li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-list a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
+    color: #333;
+    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background: #d2b48c;
-    color: white;
+.nav-list a:hover {
+    color: #8B4513;
 }
 
 /* Gallery Section */
 .gallery {
     text-align: center;
-    padding: 40px 0;
-    background: #f5f5f5;
+    padding: 30px;
+    background-color: #f5f5f5;
 }
 
 .gallery-container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
+    position: relative;
+    max-width: 500px;
     margin: auto;
+}
+
+.carousel-wrapper {
     overflow: hidden;
+    width: 300px;
 }
 
 .carousel {
@@ -53,35 +95,39 @@ nav ul li a:hover {
 }
 
 .gallery-img {
-    width: 180px; /* Smaller images */
+    width: 100px; /* Small Clinic Images */
     height: auto;
     margin: 0 5px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Carousel Buttons */
+/* Buttons for Gallery */
 .prev, .next {
+    cursor: pointer;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
 }
 
-.prev {
-    left: 10px;
+.prev { left: 0; }
+.next { right: 0; }
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5;
 }
 
-.next {
-    right: 10px;
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+/* Dr. Vaishnavi's Image */
+.about-img {
+    width: 120px
