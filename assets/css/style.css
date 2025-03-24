@@ -500,7 +500,7 @@ body {
   #CTA
 \*-----------------------------------*/
 
-.cta { background-color: var(--oxford-blue-1); }
+.cta { background-color: var(--cultured); }
 
 .cta-banner {
   max-width: 250px; /* Adjust this value to control the image size */
@@ -519,7 +519,7 @@ body {
 .cta .section-title {
   color: var(--white);
   font-size: var(--fs-3);
-  margin-block-end: 30px;
+  margin-block-end: 10px;
 }
 /*-----------------------------------*\
   #BLOG
