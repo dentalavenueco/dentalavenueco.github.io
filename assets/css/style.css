@@ -512,11 +512,9 @@ body {
   margin-block-end: 30px;
 }
 
-.cta .btn { max-width: max-content; }
-
-
-
-
+.cta .btn { max-width: max-content;
+          margin-block-start: 30px;
+  padding-inline: 15px;}
 
 /*-----------------------------------*\
   #BLOG
