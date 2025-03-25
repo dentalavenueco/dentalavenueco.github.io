@@ -503,8 +503,7 @@ body {
 .cta { background-color: var(--cultured); }
 
 .cta-banner {
-  max-width: 250px; /* Adjust this value to control the image size */
-  margin-inline: auto; /* Center align */
+margin-inline: auto; /* Center align */
 }
 
 .cta-banner img {
