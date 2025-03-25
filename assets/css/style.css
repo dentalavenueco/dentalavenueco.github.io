@@ -518,7 +518,6 @@ margin-inline: auto; /* Center align */
 .cta .section-title {
   color: var(--oxford-blue-3);
   font-size: var(--fs-3);
-  margin-block-end: 10px;
 }
 /*-----------------------------------*\
   #BLOG
